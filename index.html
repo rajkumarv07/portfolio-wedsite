@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Wedsite</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="/images/ChatGPT Image Apr 28, 2025, 04_07_27 PM.png" class="logo">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Computer Science Student | Aspiring Developer</p>
+        <h1>Hi,I'm Vullengala RajKumar</h1>
+      </div>
+    </div>
+    <section class="student-section">
+      <div class="student-profile">
+        <img src="/images/bkg.png" alt="Student Image" />
+
+      </div>
+    </section>
+  </div>
+  <!-- -------------about------------ -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="/images/fig.jpg" alt="it's me">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+          Excepturi perspiciatis nemo nostrum modi optio soluta mollitia inventore minima id nam, quibusdam, sed illo
+          dolorum corrupti ea eos eius nisi rerum autem repellendus adipisci. Doloribus vel ducimus nostrum qui!</p>
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Certfications')">Certfications</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>Frontend Wed Developer:</span><br>HTML,CSS,Bootstrap,JS <br>Basics(AngularJs,ReactJs)</li>
+              <li><span>Databases:</span> <br>Mysql,MongoDB</li>
+              <li><span>Languages:.</span><br>Java,Python,C</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Certfications">
+            <ul>
+              <li><span>Google Cloud:</span><br>Cloud-Computing Foundations,GenaiExchange,Developing LLM's</li>
+              <li><span>Microsoft Learn:</span><br>Foundations AI and Azure <br></li>
+              <li><span>Simplilearn:</span><br>Full Stack Wed-Development,DSA</li>
+              <li><span>freecodecamp:</span><br>Full Stack Wed-Development</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>SSC:</span><br>Tagore's Home N.E.I.S.School - (2019)</li>
+              <li><span>Intermediate:</span> <br>Sri Chaintanya Jr Kalasala - (2021)</li>
+              <li><span>B.Tech:</span><br>Siddhartha Institute Of Technology & Sciences - (2025)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------services---------------- -->
+   <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1><br>
+      <div class="services-list">
+        <div>
+          <h2>IOT Based Suicide Prevention System:</h2>
+          <p>The IoT-Based Suicide Prevention System is a smart safety solution designed to detect and prevent suicide attempts in real-time. It uses sensors like IR or load sensors placed on ceiling fans to identify unusual activity, such as the presence of a rope. When triggered, the system sends immediate alerts to caregivers or emergency contacts through IoT communication, enabling timely intervention.</p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <h2>Medicine Reminder App:</h2>
+          <p>The Medicine Reminder App is a digital solution designed to help patients take their medicines on time by sending timely notifications and alerts. It allows users to track their daily dosage, mark medicines as taken, and maintain consistent medication routines. Caretakers can also monitor patient adherence and receive low stock alerts for timely refills.<br>(ongoing)</p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <h2>Travel Trip for Schools:</h2>
+          <p>The Travel Trip for Schools is an organized educational tour program designed to provide students with real-world learning experiences beyond the classroom. It includes carefully planned visits to historical sites, museums, and nature spots, ensuring both fun and education. The trip aims to enhance students’ knowledge, teamwork, and social skills through safe and memorable travel. <br>(ongoing)</p>
+          <a href="#">learn more</a>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- -----------------------------contact----------------- -->
+   <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          
+          <p>
+            <a href="mailto:rajkumarvullengala@gmail.com" style="text-decoration: none; color: inherit;">
+              <i class="fa-solid fa-envelope" style="color: #d44638; margin-right: 8px;"></i>
+              rajkumarvullengala@gmail.com
+            </a>
+          </p>
+          <br>
+          <br>
+          <a href="/RajkumarResume.pdf" download class="btn btn2">Download My Resume</a>
+        </div>
+        
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="your name" required>
+            <input type="email" name="Email" placeholder="your email" required>
+            <textarea name="Message" rows="6" placeholder="your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+          
+
+          </div>
+          
+    </div>
+   </div>
+   <div class="copyright">
+    <p>Made with ❤️ by Raj</p>
+    </div>
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwPxHx7T2onqkrE5-9PYX0EiPcb_7AucIAb3WCS27NX3gPIo3hjlS5Jmuo-M8-bqrSadw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message Sent Successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+  
+</body>
+
+</html>
