@@ -114,10 +114,10 @@
           </p>
           <br>
           <br>
-          <a href={`${process.env.PUBLIC_URL}/RajkumarResume.pdf`} download className="btn btn2">
+          <!-- <a href={`${process.env.PUBLIC_URL}/RajkumarResume.pdf`} download className="btn btn2">
             Download My Resume
-          </a>
-          
+          </a> -->
+          <a href="images/RajkumarResume.pdf" download class="btn btn2">Download My Resume</a>
         </div>
         
         <div class="contact-right">
@@ -169,9 +169,9 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-  <a href="./images/RajkumarResume.pdf" download>Download Resume</a>
+  <!-- <a href="./images/RajkumarResume.pdf" download>Download Resume</a> -->
 
-  <script>
+  <!-- <script>
   function forceDownload(link) {
     const url = link.getAttribute("href");
     const anchor = document.createElement("a");
@@ -182,7 +182,7 @@
     document.body.removeChild(anchor);
   }
   </script>
-  
+   -->
   
   
 </body>
