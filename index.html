@@ -169,6 +169,20 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+  <a href="RajkumarResume.pdf" onclick="forceDownload(this)">Download</a>
+
+  <script>
+  function forceDownload(link) {
+    const url = link.getAttribute("href");
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = url.split('/').pop();
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+  }
+  </script>
+  
   
   
 </body>
